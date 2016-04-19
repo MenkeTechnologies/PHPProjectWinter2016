@@ -1,0 +1,25 @@
+----------------------
+Game Application Notes
+----------------------
+
+Stories:
+
+(A) As a user, I can view a listing of games.
+estimated story points 3
+acceptance criteria
+-page to display list of games, taken from db
+-games displayed in abc order
+
+(B) As a user, I can add a new game.
+
+-link to form
+-form to fill out game info
+    -all fields exc gameID
+-when form submitted, check if data valid
+    -if ok into db and redirect to listing page
+    -if not return to form and error msg
+
+(C) As a user, I can modify an existing game record.
+(D) As a user, I can add view details about a game.
+(E) As a user, I can delete a game record.
+(F) As a user, I can add view a report of the game data.

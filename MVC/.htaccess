@@ -1,0 +1,11 @@
+Options All
+RewriteEngine on
+#
+# Set your RewriteBase to your project directory
+#
+RewriteBase /jmenke/MVC/
+#
+#
+RewriteRule ^index.php(.*)$ index.php$1 [QSA,L]
+RewriteCond %{REQUEST_URI} !^.*resources/.*
+RewriteRule ^(.*)$ index.php?cmd=$1 [QSA,L]
