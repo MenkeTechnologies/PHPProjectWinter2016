@@ -31,6 +31,8 @@ if (isset($_REQUEST['user'])) {
         $currentPass = $currentPassSearch['password'];
 
         if ($possiblePass == $currentPass) {
+            
+            $_SESSION['user'] = $user;
             header("Location:index.php");
         } else {
             echo "<font color = 'red'>Incorrect Username or Password</font>";

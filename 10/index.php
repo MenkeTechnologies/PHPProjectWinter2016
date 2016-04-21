@@ -1,9 +1,10 @@
-
-<a href=login.php>Logout</a>
-<a href=change.php>Change Password</a>
-    <?php
+   <?php
     
     session_start();
+    
+    
+    echo "<a href=login.php>Logout</a>
+<a href=change.php>Change Password</a>";
 /**
  * 		CPS 276 Winter 2016-- Assignment 01
  * 	Aquarium Cost Estimator
