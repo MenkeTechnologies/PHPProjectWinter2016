@@ -4,6 +4,8 @@
  * 
  */
 
+session_start();
+
 include 'connect.php';
 
 if (isset($_REQUEST['user'])) {
