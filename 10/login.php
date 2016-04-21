@@ -3,8 +3,9 @@
  * created by Jacob Menke
  * 
  */
+ session_start();
 
-session_start();
+unset($_SESSION['user']);
 
 include 'connect.php';
 
@@ -31,7 +32,9 @@ if (isset($_REQUEST['user'])) {
         $currentPass = $currentPassSearch['password'];
 
         if ($possiblePass == $currentPass) {
-            
+           
+           
+
             $_SESSION['user'] = $user;
             header("Location:index.php");
         } else {
@@ -73,6 +76,9 @@ if (isset($_REQUEST['newUser'])) {
             echo "<font color = 'red'> Username cannot be blank sorry.</font>";
         } else {
 
+            
+            
+            echo "It is working";
             //encrypt password
 
             $salt = "dgjklgaj()#%lk353";
@@ -83,6 +89,7 @@ if (isset($_REQUEST['newUser'])) {
 
             $result = $pdo->query($sqlAdd);
 
+            $_SESSION['user'] = $newUser;
             header("Location:index.php");
         }
     }

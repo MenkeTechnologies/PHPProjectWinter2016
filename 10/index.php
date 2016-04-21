@@ -2,6 +2,13 @@
     
     session_start();
     
+     If(!isset($_SESSION['user'])){
+         header("Location:login.php");
+         
+     } else {
+      echo "Login Successful!<br>";   
+     }
+          
     
     echo "<a href=login.php>Logout</a>
 <a href=change.php>Change Password</a>";
@@ -156,6 +163,7 @@ if ($width == 0 || $height == 0 || $depth == 0) {
     $labor_cost = '';
     $total_cost = '';
 }
+     
 ?>
 <form method='get' action='index.php'>
     <table border='1'>

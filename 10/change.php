@@ -6,7 +6,14 @@
 
 session_start();
 
+ If(!isset($_SESSION['user'])){
+         header("Location:login.php");
+         
+     }
+
 include 'connect.php';
+
+echo "<a href=index.php>Back</a>";
 
 if (isset($_REQUEST['user'])) {
 
