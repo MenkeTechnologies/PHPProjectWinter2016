@@ -72,8 +72,6 @@ else{
     
     foreach($decodedFood['results'] as $foods){
         $productName = $foods['product_name'];
-        
-        
         $category = $foods['category'];
         $servingSize = $foods['serving_size'];
         $calories = $foods['calories'];
@@ -81,9 +79,6 @@ else{
         $satFat = $foods['saturated_fat'];
         $sodium = $foods['sodium'];
         
-        
-        
-    
     echo"<tr>";
     echo "<td>".(($productName) ? $productName : '&nbsp')."</td>";
     echo "<td>".(($category) ? $category : '&nbsp')."</td>";

@@ -5,9 +5,12 @@ class Game {
     public function listing(){
         //show list of all games
         
+       
        //prepare an array
         
         //passs this to the view
+        
+        View::setTemplate('gameListing');
     }
 
     public function add(){
