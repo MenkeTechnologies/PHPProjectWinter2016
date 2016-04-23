@@ -2,6 +2,11 @@
 /*
  * created by Jacob Menke
  * 
+ * 
+ * User = Instructor
+ * PW = hellowo5
+ * 
+ * 
  */
  session_start();
 
@@ -119,7 +124,7 @@ if (isset($_REQUEST['newUser'])) {
 
 </form>
 
-<header>Password must be 7 letters and 1 number </header>
+<header>Password must be 7 letters and 1 number.  No spaces or any extra characters.  Capital letters are allowed. </header>
 
 <form method="request" action='login.php'>
 
